@@ -8,6 +8,7 @@ favorite front end tools.
 
 ## Kits
 * [Middleman](http://github.com/thoughtbot/proteus-middleman)
+* [Jekyll](http://github.com/thoughtbot/proteus-jekyll)
 * [Node](http://github.com/thoughtbot/proteus-node)
 
 Credits
@@ -26,4 +27,3 @@ The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
 Carnival is Copyright © 2014 thoughtbot, inc. It is free software, and may be
 redistributed under the terms specified in the LICENSE file.
-
