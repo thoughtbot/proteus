@@ -1,3 +1,12 @@
-require 'proteus'
+#!/usr/bin/env ruby
 
-proteus = Proteus::Kit.new
+require 'rubygems'
+
+begin
+  require 'proteus/kit'
+rescue LoadError => e
+warn 'Could not load "proteus/kit"'
+  exit -1
+end
+
+Proteus::Kit.start

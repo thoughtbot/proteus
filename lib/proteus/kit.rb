@@ -1,12 +1,37 @@
+require "thor"
+
 module Proteus
-  class Kit
-    def self.url(kit)
-      "git://github.com/thoughtbot/proteus-#{kit}.git"
+  class Kit < Thor
+    include Thor::Actions
+
+    desc "url", "gets the git url"
+    def url(kit)
+      "git@github.com:thoughtbot/proteus-#{kit}.git"
     end
 
-    def self.clone(kit, name = nil)
-      name ||= kit
-      "git clone #{url(kit)}#{' ' + name}"
+    desc "new", "runs the command to clone a particular kit"
+    def new(kit_name, repo_name = nil)
+      repo_name ||= kit_name
+      puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
+      system "git clone #{url(kit_name)}#{' ' + repo_name}"
+    end
+
+    desc "setup", "Sets up the project"
+    def setup
+      puts "Setting up your project"
+      system "./bin/setup"
+    end
+
+    desc "server", "Runs the server"
+    def server
+      puts "Starting the server"
+      system "./bin/server"
+    end
+
+    desc "deploy", "Deploys the site to Github"
+    def deploy
+      puts "Deploying the site to Github"
+      system "./bin/deploy"
     end
   end
 end
