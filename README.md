@@ -11,6 +11,14 @@ favorite front end tools.
 * [Jekyll](http://github.com/thoughtbot/proteus-jekyll)
 * [Node](http://github.com/thoughtbot/proteus-node)
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```
+gem install proteus
+```
+
 Credits
 -------
 
