@@ -1,3 +1,4 @@
+require "proteus/version"
 require "thor"
 
 module Proteus
@@ -32,6 +33,11 @@ module Proteus
     def deploy
       puts "Deploying the site to Github"
       system "./bin/deploy"
+    end
+
+    desc "version", "Show Proteus version"
+    def version
+        say "Proteus #{Proteus::VERSION}"
     end
   end
 end

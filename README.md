@@ -9,14 +9,19 @@ favorite front end tools.
 ## Kits
 * [Middleman](http://github.com/thoughtbot/proteus-middleman)
 * [Jekyll](http://github.com/thoughtbot/proteus-jekyll)
-* [Node](http://github.com/thoughtbot/proteus-node)
+* [Gulp](http://github.com/thoughtbot/proteus-gulp)
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Just run this to install it:
 
 ```
 gem install proteus
+```
+
+Then pick the project you want to start
+```
+proteus new middleman
 ```
 
 Credits
