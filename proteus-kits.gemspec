@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "proteus/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "proteus"
+  spec.name          = "proteus-kits"
   spec.version       = Proteus::VERSION
   spec.authors       = ["Joshua Ogle"]
   spec.email         = ["support@thoughtbot.com"]
