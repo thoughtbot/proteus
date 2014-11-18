@@ -19,10 +19,15 @@ Just run this to install it:
 gem install proteus
 ```
 
-Then pick the project you want to start
+Then pick the project you want to start (i.e. Middleman)
 ```
-proteus new middleman
+proteus new middleman your-project-name
 ```
+
+Shortcuts
+-------
+
+We have also included some handy shortcuts for your Proteus kit: `proteus setup`, `proteus server` and `proteus deploy`
 
 Credits
 -------
