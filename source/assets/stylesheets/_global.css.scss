@@ -7,7 +7,9 @@ body {
   @include align-items(center);
   @include display(flex);
   @include justify-content(center);
-  height: 100vh;
+  @include linear-gradient($blue, mix($blue, $aqua));
+  height: 90vh;
+  max-height: 40em;
 
   .container {
     text-align: center;
