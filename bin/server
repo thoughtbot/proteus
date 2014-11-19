@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# Run the Middleman server
+bundle exec middleman

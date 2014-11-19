@@ -1,0 +1,15 @@
+body {
+  background: $light-gray;
+  color: $medium-gray;
+}
+
+.hero {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+  height: 100vh;
+
+  .container {
+    text-align: center;
+  }
+}

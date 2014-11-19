@@ -1,0 +1,68 @@
+@import "bourbon";
+
+@include keyframes(orbit) {
+  $steps: 20;
+
+  @for $step from 0 through $steps {
+    $percent: $step/$steps * 100;
+    $degrees: $step/$steps * 360;
+    $edge: 80px;
+    $peaks: 4;
+    $wobble: sin(3600deg * $step/$steps) * 40;
+    $offset: $wobble + $edge;
+
+    #{$percent}% {
+      @include transform(rotate(#{$degrees}deg) translateX($offset));
+    }
+  }
+}
+
+#logo {
+  $slate: #343740;
+  $blobs: 120;
+  $duration: 60s;
+
+  #nucleus {
+    fill: $slate;
+    position: relative;
+  }
+
+  #particles {
+    circle {
+      @include animation(orbit $duration linear infinite);
+      @include transform-origin(50%);
+      fill: $slate;
+
+      @for $blob from 0 through $blobs {
+        $percent: $blob/$blobs;
+        $delay: $duration * $percent * -1;
+
+        &:nth-child(#{$blob}) {
+          @include animation-delay($delay);
+          @include animation-duration($duration * 0.9);
+        }
+
+        &:nth-child(5) {
+          @include animation-delay($delay/2);
+          @include animation-duration($duration * 0.8);
+        }
+
+        &:nth-child(7) {
+          @include animation-delay($delay/3);
+          @include animation-duration($duration * 0.7);
+          @include animation-direction(reverse);
+        }
+
+        &:nth-child(11) {
+          @include animation-delay($delay/4);
+          @include animation-duration($duration * 0.6);
+        }
+      }
+
+      &:nth-child(even) {
+        @include animation-direction(reverse);
+        @include animation-duration($duration * 0.5);
+      }
+    }
+  }
+}
