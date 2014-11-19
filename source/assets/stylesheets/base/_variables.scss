@@ -1,12 +1,12 @@
 // Typography
-$sans-serif: $helvetica;
+$sans-serif: "calluna-sans", $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: "proxima-nova", $base-font-family;
 
 // Sizes
 $base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
+$base-line-height: $base-font-size * 1.35;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
@@ -15,9 +15,10 @@ $base-border-radius: em(3);
 $blue: #156178;
 $aqua:#4ABAB0;
 $green: #A2DCB8;
+$orange: #ED8E42;
 $slate: #343740;
 $dark-gray: #333;
-$medium-gray: #999;
+$medium-gray: #AAA;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
@@ -28,7 +29,7 @@ $base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $orange;
 
 // Link Colors
 $base-link-color: $base-accent-color;

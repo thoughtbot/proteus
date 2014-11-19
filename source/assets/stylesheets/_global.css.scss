@@ -1,6 +1,6 @@
 body {
-  background: $light-gray;
-  color: $medium-gray;
+  background: #eee;
+  color: mix($dark-gray, $medium-gray);
 }
 
 .hero {
@@ -8,10 +8,37 @@ body {
   @include display(flex);
   @include justify-content(center);
   @include linear-gradient($blue, mix($blue, $aqua));
+  color: #eee;
   height: 90vh;
-  max-height: 40em;
+  max-height: 30em;
 
   .container {
     text-align: center;
   }
+
+  h1 {
+    color: #fff;
+    font-weight: 800;
+  }
+
+  a {
+    color: #eee;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.container {
+  @include outer-container;
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+section {
+  border-bottom: 1px solid #ccc;
+  padding: 2em;
 }
