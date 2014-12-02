@@ -10,47 +10,59 @@
 
     %ul.tools
       %li
-        = image_tag "haml.svg"
-        %h3= link_to "HAML", "http://haml.info"
+        = link_to "http://haml.info" do
+          = image_tag "haml.svg"
+          %h3 HAML
         %p Simple template markup
       %li
-        = image_tag "sass.svg"
-        %h3= link_to "Sass", "http://sass-lang.com"
-        %p CSS with superpowers
-      %li
-        = image_tag "coffeescript.svg"
-        %h3= link_to "Coffeescript", "http://coffeescript.org"
+        = link_to "http://coffeescript.org" do
+          = image_tag "coffeescript.svg"
+          %h3 Coffeescript
         %p Beats writing javascript
       %li
-        = image_tag "bourbon.svg"
-        %h3= link_to "Bourbon", "http://bourbon.io"
+        = link_to "http://sass-lang.com" do
+          = image_tag "sass.svg"
+          %h3 Sass
+        %p CSS with superpowers
+      %li
+        = link_to "http://bourbon.io" do
+          = image_tag "bourbon.svg"
+          %h3 Bourbon
         %p Sass mixin library
       %li
-        = image_tag "neat.svg"
-        %h3= link_to "Neat", "http://neat.bourbon.io"
+        = link_to "http://neat.bourbon.io" do
+          = image_tag "neat.svg"
+          %h3 Neat
         %p Semantic grid
       %li
-        = image_tag "bitters.svg"
-        %h3= link_to "Bitters", "http://bitters.bourbon.io"
+        = link_to "http://bitters.bourbon.io" do
+          = image_tag "bitters.svg"
+          %h3 Bitters
         %p Styles, variables and structure
 
   %section
+    .section-title
+      %h3 The kits (so far)
+
     %ul.kits
       %li
         = link_to "http://github.com/thoughtbot/proteus-middleman" do
-          %h3= link_to "Middleman", "http://middlemanapp.com"
-          %p Tiny static site generator based on Ruby. Our favorite.
+          = image_tag "middleman.svg"
+          %h3 Middleman
+        %p Tiny static site generator based on Ruby. Our favorite.
       %li
         = link_to "http://github.com/thoughtbot/proteus-jekyll" do
-          %h3= link_to "Jekyll", "http://jekyllrb.com"
-          %p Popular Ruby based generator with tons of plugins
+          = image_tag "jekyll.svg"
+          %h3 Jekyll
+        %p Popular Ruby based generator with tons of plugins
       %li
         = link_to "http://github.com/thoughtbot/proteus-gulp" do
-          %h3= link_to "Gulp", "http://gulpjs.com"
-          %p Dead simple generator built on NPM and Gulp
+          = image_tag "gulp.svg"
+          %h3 Gulp
+        %p Dead simple generator built on NPM and Gulp
 
   %section.section-gem
-    .gem-title
+    .section-title
       = image_tag "gem.svg"
       %h3 We even made a gem
 
@@ -64,7 +76,17 @@
     %pre
       %code proteus new middleman your-project-name
 
-    %p We have also included some handy shortcuts for you to use in your Proteus kit: <code>proteus setup</code>, <code>proteus server</code> and <code>proteus deploy</code>
+    %p We've also included some handy shortcuts for you to use in your kit:
+    %ul
+      %li
+        %code proteus setup
+        \: Installs dependencies
+      %li
+        %code proteus server
+        \: Runs the server
+      %li
+        %code proteus deploy
+        \: Deploys your site to Github Pages
 
   %section.section-cta
     = link_to "More on Github", "https://github.com/thoughtbot/proteus"
@@ -73,7 +95,7 @@
     %h2 Questions
     %dl
       %dt What's up with the name?
-      %dd Proteus was an early Greek sea god and was a shapeshifter. The English word "protean" means "able to do many things, change easily, versatile". We use static site generators to prototype apps and sites quickly, so it seemed like a good fit.
+      %dd Proteus was an early Greek sea god and a shapeshifter. The English word "protean" means "able to do many things, change easily, versatile". We use static site generators to <em>prot</em>otype apps and sites quickly, so it seemed like a good fit.
 
       %dt My favorite generator isn't listed!
       %dd

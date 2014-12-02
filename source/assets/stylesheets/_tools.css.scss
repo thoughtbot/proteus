@@ -6,11 +6,11 @@
     @include span-columns(4);
     color: $light-gray;
     font-size: em(13);
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     text-align: center;
 
     img {
-      @include transition(transform, 250ms);
+      @include transition(transform, 0.1s);
       border-radius: 50%;
       margin-bottom: 1em;
 

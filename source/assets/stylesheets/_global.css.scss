@@ -29,14 +29,11 @@ code {
   box-shadow: 0.33em 0 0 $slate, -0.33em 0 0 $slate;
 }
 
-dl {
-  font-size: 1rem;
-
-  dd {
-    margin-bottom: 2em;
-  }
+.intro {
+  padding: 2em 0;
 }
 
-.intro {
-  padding: 2em 0 4em;
+.section-title {
+  margin-bottom: 2em;
+  text-align: center;
 }

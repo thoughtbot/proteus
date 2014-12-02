@@ -14,9 +14,14 @@ ul, ol {
     margin-bottom: $base-line-height / 2;
     padding-left: $base-line-height;
   }
+
+  li {
+    margin-bottom: 0.5em;
+  }
 }
 
 dl {
+  font-size: 1rem;
   margin-bottom: $base-line-height / 2;
 
   dt {
@@ -25,6 +30,6 @@ dl {
   }
 
   dd {
-    margin: 0;
+    margin: 0 0 2em;
   }
 }
