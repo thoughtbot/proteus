@@ -7,7 +7,7 @@
 }
 
 section {
-  padding: 5em;
+  padding: 5em 2em;
 
   &:last-of-type {
     border-bottom: none;
@@ -23,9 +23,9 @@ code {
   border-radius: 4px;
   color: $green;
   font-family: monospace, serif;
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 0.25em;
-  padding: 0.33em 0.66em 0.5em;
+  padding: 0.25em 0.33em;
   box-shadow: 0.33em 0 0 $slate, -0.33em 0 0 $slate;
 }
 

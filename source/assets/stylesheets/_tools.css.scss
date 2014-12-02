@@ -2,15 +2,21 @@
   @include clearfix;
 
   li {
-    @include span-columns(4);
     @include omega(3n);
-    color: $medium-gray;
-    font-size: em(12);
+    @include span-columns(4);
+    color: $light-gray;
+    font-size: em(13);
     margin-bottom: 2em;
     text-align: center;
 
     img {
+      @include transition(transform, 250ms);
+      border-radius: 50%;
       margin-bottom: 1em;
+
+      &:hover {
+        @include transform(scale(1.1));
+      }
     }
   }
 }
