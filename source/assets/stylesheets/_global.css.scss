@@ -1,3 +1,9 @@
+body {
+  @include media($small-screen) {
+    font-size: 0.7rem;
+  }
+}
+
 .container {
   @include outer-container;
 
@@ -23,7 +29,7 @@ code {
   border-radius: 4px;
   color: $green;
   font-family: monospace, serif;
-  font-size: 15px;
+  font-size: 1em;
   margin: 0 0.25em;
   padding: 0.25em 0.33em;
   box-shadow: 0.33em 0 0 $slate, -0.33em 0 0 $slate;
