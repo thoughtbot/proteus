@@ -3,6 +3,8 @@
     = image_tag "logo.svg", data: {svg_fallback: "/assets/images/logo.png"}
     %h1 Proteus
     %p Static site kits from your friends at #{link_to "thoughtbot", "http://thoughtbot.com"}
+    %p
+      = link_to "Get Started", "#start", class: "button"
 
 .container
   %section
@@ -52,7 +54,7 @@
             %h3 Bitters
             %p Styles, variables and structure
 
-  %section
+  %section#start
     .section-title
       %h3 The kits (so far)
 
@@ -101,13 +103,17 @@
         \: Deploys your site to Github Pages
 
   %section.section-cta
-    = link_to "More on Github", "https://github.com/thoughtbot/proteus"
+    = link_to "View the kits on Github", "https://github.com/thoughtbot/proteus"
 
   %section.section-faq
     %h2 Questions
     %dl
       %dt What's up with the name?
       %dd Proteus was an early Greek sea god and a shapeshifter. The English word "protean" means "able to do many things, change easily, versatile". We use static site generators to <em>prot</em>otype apps and sites quickly, so it seemed like a good fit.
+
+      %dt I found a bug / Have an improvement / Want to help
+      %dd
+        Great! The best way to make the kits better is to open an Issue on that kit on Github. Bonus points if you submit a Pull Request to fix a problem.
 
       %dt My favorite generator isn't listed!
       %dd

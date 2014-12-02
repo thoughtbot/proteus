@@ -23,10 +23,26 @@
     font-weight: 200;
   }
 
+  p {
+    margin-bottom: 2em;
+  }
+
   a {
     color: #eee;
 
     &:hover {
+      color: #fff;
+    }
+  }
+
+  .button {
+    background: mix($blue, $aqua);
+    box-shadow: 0 0 0 mix($blue, $aqua);
+    color: $light-gray;
+    margin: 0 0.25em 0.5em;
+
+    &:hover {
+      box-shadow: 0 0 0 0.2em mix($blue, $aqua);
       color: #fff;
     }
   }
