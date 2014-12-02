@@ -1,0 +1,16 @@
+.tools {
+  @include clearfix;
+
+  li {
+    @include span-columns(4);
+    @include omega(3n);
+    color: $medium-gray;
+    font-size: em(12);
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      margin-bottom: 1em;
+    }
+  }
+}

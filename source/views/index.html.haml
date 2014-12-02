@@ -6,24 +6,31 @@
 
 .container
   %section
-    %p Proteus is a collection of useful starter kits to help you launch your static site or prototype faster. They follow the #{link_to "thoughtbot styleguide", "https://github.com/thoughtbot/guides/tree/master/style"} and include our favorite front end tools.
+    %p.intro Proteus is a collection of useful starter kits to help you launch your static site or prototype faster. They follow the #{link_to "thoughtbot styleguide", "https://github.com/thoughtbot/guides/tree/master/style"} and include our favorite front end tools.
+
     %ul.tools
       %li
+        = image_tag "haml.svg"
         %h3 HAML
         %p Simple template markup
       %li
-        %h3 Coffeescript
-        %p Write javascript with simpler syntax
-      %li
+        = image_tag "sass.svg"
         %h3 Sass
         %p CSS with superpowers
       %li
+        = image_tag "coffeescript.svg"
+        %h3 Coffeescript
+        %p Write javascript with simpler syntax
+      %li
+        = image_tag "bourbon.svg"
         %h3 Bourbon
         %p Sass mixin library
       %li
+        = image_tag "neat.svg"
         %h3 Neat
         %p Semantic grid for Sass and Bourbon
       %li
+        = image_tag "bitters.svg"
         %h3 Bitters
         %p Scaffold styles, variables and structure for Bourbon projects.
 
@@ -43,17 +50,23 @@
           %p Kapow
 
   %section.section-gem
+    = image_tag "gem.svg"
     %h3 Proteus gem
     %p Just run this to install it:
-    %code gem install proteus
+
+    %pre
+      %code gem install proteus
+
     %p Then pick the project you want to start (i.e. Middleman)
-    %code proteus new middleman your-project-name
+
+    %pre
+      %code proteus new middleman your-project-name
 
     %h3 Shortcuts
-    %p We have also included some handy shortcuts for your Proteus kit: proteus setup, proteus server and proteus deploy
+    %p We have also included some handy shortcuts for you to use in your Proteus kit: <code>proteus setup</code>, <code>proteus server</code> and <code>proteus deploy</code>
 
   %section.section-faq
-    %h2 FAQ
+    %h2 Questions
     %dl
       %dt What's up with the name?
       %dd We use static site generators to prototype apps and sites quickly. Proteus was an early Greek sea god and was a shapeshifter. The English word "protean" means "able to do many things, change easily, versatile".

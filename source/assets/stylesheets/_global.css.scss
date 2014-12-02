@@ -1,35 +1,3 @@
-body {
-  background: #eee;
-  color: mix($dark-gray, $medium-gray);
-}
-
-.hero {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(center);
-  @include linear-gradient($blue, mix($blue, $aqua));
-  color: #eee;
-  height: 90vh;
-  max-height: 30em;
-
-  .container {
-    text-align: center;
-  }
-
-  h1 {
-    color: #fff;
-    font-weight: 800;
-  }
-
-  a {
-    color: #eee;
-
-    &:hover {
-      color: #fff;
-    }
-  }
-}
-
 .container {
   @include outer-container;
 
@@ -41,4 +9,25 @@ body {
 section {
   border-bottom: 1px solid #ccc;
   padding: 2em;
+}
+
+pre {
+  margin-bottom: 2em;
+}
+
+code {
+  background-color: tint($dark-gray, 85%);
+  border-radius: 4px;
+  color: $blue;
+  font-family: monospace, serif;
+  font-size: 14px;
+  padding: 0.33em 0.66em;
+}
+
+dd {
+  margin-bottom: 2em;
+}
+
+.intro {
+  padding: 2em 0 4em;
 }

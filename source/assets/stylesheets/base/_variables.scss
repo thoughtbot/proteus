@@ -17,18 +17,18 @@ $aqua:#4ABAB0;
 $green: #A2DCB8;
 $orange: #ED8E42;
 $slate: #343740;
-$dark-gray: #333;
-$medium-gray: #AAA;
+$dark-gray: #38484D;
+$medium-gray: #888;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: $dark-gray;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $light-gray;
 $base-accent-color: $orange;
 
 // Link Colors

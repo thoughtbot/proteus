@@ -1,0 +1,33 @@
+.hero {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
+  @include linear-gradient($blue, mix($blue, $aqua));
+  border-bottom: 1px solid $aqua;
+  box-shadow: 0 0 8px rgba(#000, 0.8);
+  color: #eee;
+  height: 95vh;
+  min-height: 20em;
+
+  .container {
+    text-align: center;
+  }
+
+  img {
+    @include size(240px);
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 200;
+  }
+
+  a {
+    color: #eee;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
