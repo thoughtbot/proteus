@@ -18,5 +18,9 @@
         @include transform(scale(1.1));
       }
     }
+
+    h3 {
+      margin-bottom: 0.25em;
+    }
   }
 }

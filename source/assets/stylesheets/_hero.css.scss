@@ -3,7 +3,6 @@
   @include display(flex);
   @include justify-content(center);
   @include linear-gradient($blue, mix($blue, $aqua));
-  border-bottom: 1px solid $aqua;
   box-shadow: 0 0 8px rgba(#000, 0.8);
   color: #eee;
   height: 95vh;
