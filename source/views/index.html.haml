@@ -6,39 +6,51 @@
 
 .container
   %section
-    %p.intro Proteus is a collection of useful starter kits to help you launch your static site or prototype faster. They follow the #{link_to "thoughtbot styleguide", "https://github.com/thoughtbot/guides/tree/master/style"} and include our favorite front end tools.
+    %p.intro Proteus is a collection of useful starter kits to help you launch your static site or prototype faster. They follow the #{link_to "thoughtbot styleguide", "https://github.com/thoughtbot/guides/tree/master/style"} and include our favorite front end tools:
 
     %ul.tools
-      %li
+      %li.tool-haml
         = link_to "http://haml.info" do
-          = image_tag "haml.svg", data: {svg_fallback: "/assets/images/haml.png"}
-          %h3 HAML
-        %p Simple template markup
-      %li
+          .icon
+            = image_tag "haml.svg", data: {svg_fallback: "/assets/images/haml.png"}
+          .info
+            %h3 HAML
+            %p Simple template markup
+      %li.tool-coffeescript
         = link_to "http://coffeescript.org" do
-          = image_tag "coffeescript.svg", data: {svg_fallback: "/assets/images/coffeescript.png"}
-          %h3 Coffeescript
-        %p Beats writing javascript
-      %li
+          .icon
+            = image_tag "coffeescript.svg", data: {svg_fallback: "/assets/images/coffeescript.png"}
+          .info
+            %h3 Coffeescript
+            %p Beats writing javascript
+      %li.tool-sass
         = link_to "http://sass-lang.com" do
-          = image_tag "sass.svg", data: {svg_fallback: "/assets/images/sass.png"}
-          %h3 Sass
-        %p CSS with superpowers
-      %li
+          .icon
+            = image_tag "sass.svg", data: {svg_fallback: "/assets/images/sass.png"}
+          .info
+            %h3 Sass
+            %p CSS with superpowers
+      %li.tool-bourbon
         = link_to "http://bourbon.io" do
-          = image_tag "bourbon.svg", data: {svg_fallback: "/assets/images/bourbon.png"}
-          %h3 Bourbon
-        %p Sass mixin library
-      %li
+          .icon
+            = image_tag "bourbon.svg", data: {svg_fallback: "/assets/images/bourbon.png"}
+          .info
+            %h3 Bourbon
+            %p Sass mixin library
+      %li.tool-neat
         = link_to "http://neat.bourbon.io" do
-          = image_tag "neat.svg", data: {svg_fallback: "/assets/images/neat.png"}
-          %h3 Neat
-        %p Semantic grid
-      %li
+          .icon
+            = image_tag "neat.svg", data: {svg_fallback: "/assets/images/neat.png"}
+          .info
+            %h3 Neat
+            %p Semantic grid
+      %li.tool-bitters
         = link_to "http://bitters.bourbon.io" do
-          = image_tag "bitters.svg", data: {svg_fallback: "/assets/images/bitters.png"}
-          %h3 Bitters
-        %p Styles, variables and structure
+          .icon
+            = image_tag "bitters.svg", data: {svg_fallback: "/assets/images/bitters.png"}
+          .info
+            %h3 Bitters
+            %p Styles, variables and structure
 
   %section
     .section-title
