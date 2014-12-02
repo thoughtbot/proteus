@@ -7,8 +7,7 @@
 }
 
 section {
-  border-bottom: 1px solid $slate;
-  padding: 2em;
+  padding: 5em;
 
   &:last-of-type {
     border-bottom: none;
@@ -27,7 +26,7 @@ code {
   font-size: 14px;
   margin: 0 0.25em;
   padding: 0.33em 0.66em 0.5em;
-  box-shadow: 0.25em 0 0 $slate, -0.25em 0 0 $slate;
+  box-shadow: 0.33em 0 0 $slate, -0.33em 0 0 $slate;
 }
 
 dl {

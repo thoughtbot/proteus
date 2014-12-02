@@ -1,17 +1,20 @@
 %button {
+  @include transition(all, 100ms);
   -webkit-font-smoothing: antialiased;
-  background-color: $base-button-color;
-  border-radius: $base-border-radius;
-  color: white;
+  background-color: white;
+  border-radius: 2em;
+  box-shadow: 0 0 0 white;
+  color: $dark-gray;
   display: inline-block;
   font-size: $base-font-size;
   font-weight: bold;
   line-height: 1;
-  padding: .75em 1em;
+  padding: 1em 1.25em;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
-    background-color: $hover-button-color;
-    color: white;
+    box-shadow: 0 0 0 0.2em white;
+    color: $orange;
   }
 }
