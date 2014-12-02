@@ -50,8 +50,10 @@
           %p Kapow
 
   %section.section-gem
-    = image_tag "gem.svg"
-    %h3 We even made a gem
+    .gem-title
+      = image_tag "gem.svg"
+      %h3 We even made a gem
+
     %p Just run this to install it:
 
     %pre
@@ -62,7 +64,6 @@
     %pre
       %code proteus new middleman your-project-name
 
-    %h3 Shortcuts
     %p We have also included some handy shortcuts for you to use in your Proteus kit: <code>proteus setup</code>, <code>proteus server</code> and <code>proteus deploy</code>
 
   %section.section-faq
