@@ -34,7 +34,7 @@ $prefix-for-opera:     false;
   #particles {
     circle {
       @include animation(orbit $duration linear infinite);
-      @include transform-origin(50%);
+      @include transform-origin(160px 160px);
       fill: $aqua;
 
       @for $blob from 0 through $blobs {
