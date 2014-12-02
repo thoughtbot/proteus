@@ -1,6 +1,6 @@
 .hero
   .container
-    = image_tag 'logo.svg'
+    = image_tag "logo.svg", data: {svg_fallback: "/assets/images/logo.png"}
     %h1 Proteus
     %p Static site kits from your friends at #{link_to "thoughtbot", "http://thoughtbot.com"}
 
@@ -11,32 +11,32 @@
     %ul.tools
       %li
         = link_to "http://haml.info" do
-          = image_tag "haml.svg"
+          = image_tag "haml.svg", data: {svg_fallback: "/assets/images/haml.png"}
           %h3 HAML
         %p Simple template markup
       %li
         = link_to "http://coffeescript.org" do
-          = image_tag "coffeescript.svg"
+          = image_tag "coffeescript.svg", data: {svg_fallback: "/assets/images/coffeescript.png"}
           %h3 Coffeescript
         %p Beats writing javascript
       %li
         = link_to "http://sass-lang.com" do
-          = image_tag "sass.svg"
+          = image_tag "sass.svg", data: {svg_fallback: "/assets/images/sass.png"}
           %h3 Sass
         %p CSS with superpowers
       %li
         = link_to "http://bourbon.io" do
-          = image_tag "bourbon.svg"
+          = image_tag "bourbon.svg", data: {svg_fallback: "/assets/images/bourbon.png"}
           %h3 Bourbon
         %p Sass mixin library
       %li
         = link_to "http://neat.bourbon.io" do
-          = image_tag "neat.svg"
+          = image_tag "neat.svg", data: {svg_fallback: "/assets/images/neat.png"}
           %h3 Neat
         %p Semantic grid
       %li
         = link_to "http://bitters.bourbon.io" do
-          = image_tag "bitters.svg"
+          = image_tag "bitters.svg", data: {svg_fallback: "/assets/images/bitters.png"}
           %h3 Bitters
         %p Styles, variables and structure
 
@@ -47,23 +47,23 @@
     %ul.kits
       %li
         = link_to "http://github.com/thoughtbot/proteus-middleman" do
-          = image_tag "middleman.svg"
+          = image_tag "middleman.svg", data: {svg_fallback: "/assets/images/middleman.png"}
           %h3 Middleman
-        %p Tiny static site generator based on Ruby. Our favorite.
+        %p Tiny static site generator written in Ruby.
       %li
         = link_to "http://github.com/thoughtbot/proteus-jekyll" do
-          = image_tag "jekyll.svg"
+          = image_tag "jekyll.svg", data: {svg_fallback: "/assets/images/jekyll.png"}
           %h3 Jekyll
         %p Popular Ruby based generator with tons of plugins
       %li
         = link_to "http://github.com/thoughtbot/proteus-gulp" do
-          = image_tag "gulp.svg"
+          = image_tag "gulp.svg", data: {svg_fallback: "/assets/images/gulp.png"}
           %h3 Gulp
         %p Dead simple generator built on NPM and Gulp
 
   %section.section-gem
     .section-title
-      = image_tag "gem.svg"
+      = image_tag "gem.svg", data: {svg_fallback: "/assets/images/gem.png"}
       %h3 We even made a gem
 
     %p Just run this to install it:
