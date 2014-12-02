@@ -16,7 +16,7 @@ favorite front end tools.
 Just run this to install it:
 
 ```
-gem install proteus
+gem install proteus-kits
 ```
 
 Then pick the project you want to start (i.e. Middleman)
