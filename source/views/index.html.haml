@@ -2,9 +2,9 @@
   .container
     = image_tag "logo.svg", data: {svg_fallback: "/assets/images/logo.png"}
     %h1 Proteus
-    %p Static site kits from your friends at #{link_to "thoughtbot", "http://thoughtbot.com"}
+    %p Static site starter kits from your friends at #{link_to "thoughtbot", "http://thoughtbot.com"}
     %p
-      = link_to "Get Started", "#start", class: "button", data: {scroll: true}
+      = link_to "View the kits", "#start", class: "button", data: {scroll: true}
 
 .container
   %section
@@ -75,10 +75,13 @@
           %h3 Gulp
         %p Dead simple generator built on NPM and Gulp
 
+  %section.section-cta
+    = link_to "View the kits on Github", "https://github.com/thoughtbot/proteus"
+
   %section.section-gem
     .section-title
       = image_tag "gem.svg", data: {svg_fallback: "/assets/images/gem.png"}
-      %h3 We even made a gem
+      %h3 A gem to make it even easier
 
     %p Just run this to install it:
 
@@ -102,9 +105,6 @@
         %code proteus deploy
         \: Deploys your site to Github Pages
 
-  %section.section-cta
-    = link_to "View the kits on Github", "https://github.com/thoughtbot/proteus"
-
   %section.section-faq
     %h2 Questions
     %dl
@@ -118,5 +118,5 @@
       %dt My favorite generator isn't listed!
       %dd
         We'll be adding more as we find ourselves using more of them. Can't wait? Put together a template that includes the tools listed above and
-        = link_to "open a PR", "https://github.com/thoughtbot/proteus/pulls"
+        = link_to "open a pull request", "https://github.com/thoughtbot/proteus/pulls"
         adding it to the list.
