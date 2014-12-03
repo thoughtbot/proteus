@@ -1,8 +1,8 @@
 .tools {
   @include clearfix;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   position: relative;
-  margin-bottom: -5em;
+  margin-bottom: -3em;
 
   li {
     color: $light-gray;
@@ -62,7 +62,7 @@
 
     img {
       box-shadow: 0 0.25em $slate;
-      margin: 0 2%;
+      margin: 0 2% 0.5em;
       width: 96%;
     }
 
@@ -74,7 +74,15 @@
       border-radius: 0 $base-border-radius $base-border-radius 0;
     }
 
-    .info {
+    h3 {
+      font-size: 1.25em;
+
+      @include media($small-screen) {
+        font-size: 0.8em;
+      }
+    }
+
+    p {
       @include position(absolute, null 0 0 0);
       color: $light-gray;
       display: none;
@@ -82,7 +90,11 @@
     }
 
     &:hover {
-      .info {
+      h3 {
+        color: $base-link-color;
+      }
+
+      p {
         display: block;
       }
     }
