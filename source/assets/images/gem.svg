@@ -27,8 +27,8 @@
       #bling {
         -webkit-animation: bling 5s linear infinite;
         animation: bling 5s linear infinite;
-        -webkit-transform-origin: 61.7px 6.4px;
-        transform-origin: 61.7px 6.4px;
+        -webkit-transform-origin: 61.5px 6.475px;
+        transform-origin: 61.5px 6.475px;
       }
     ]]></style>
   </defs>
