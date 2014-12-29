@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proteus (0.0.1)
+    proteus-kits (0.0.3)
       thor
 
 GEM
@@ -24,6 +24,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
-  proteus!
+  proteus-kits!
   rake (~> 10.0)
   rspec (~> 2.6)
