@@ -18,7 +18,7 @@ module Proteus
         puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
         system "git clone #{url(kit_name)}#{' ' + repo_name}"
       else
-        "A thoughtbot repo doesn't exist with that name"
+        puts "A thoughtbot repo doesn't exist with that name"
       end
     end
 
