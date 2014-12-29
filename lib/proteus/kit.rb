@@ -25,19 +25,19 @@ module Proteus
     desc "setup", "Sets up the project"
     def setup
       puts "Setting up your project"
-      system ". bin/setup"
+      system "bin/setup"
     end
 
     desc "server", "Runs the server"
     def server
       puts "Starting the server"
-      system ". bin/server"
+      system "bin/server"
     end
 
     desc "deploy", "Deploys the site to Github"
     def deploy
       puts "Deploying the site to Github"
-      system ". bin/deploy"
+      system "bin/deploy"
     end
 
     desc "version", "Show Proteus version"
