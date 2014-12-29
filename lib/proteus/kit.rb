@@ -13,8 +13,13 @@ module Proteus
     desc "new", "runs the command to clone a particular kit"
     def new(kit_name, repo_name = nil)
       repo_name ||= kit_name
-      puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
-      system "git clone #{url(kit_name)}#{' ' + repo_name}"
+
+      if system "git ls-remote #{url(kit_name)}#{' ' + repo_name} > /dev/null 2>&1"
+        puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
+        system "git clone #{url(kit_name)}#{' ' + repo_name}"
+      else
+        "A thoughtbot repo doesn't exist with that name"
+      end
     end
 
     desc "setup", "Sets up the project"
