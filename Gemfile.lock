@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proteus-kits (0.0.4.1)
+    proteus-kits (0.1)
       thor
 
 GEM
