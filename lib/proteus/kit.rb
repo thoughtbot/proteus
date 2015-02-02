@@ -16,13 +16,13 @@ module Proteus
 
       if system "git ls-remote #{url(kit_name)} #{repo_name} > /dev/null 2>&1"
         puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
-        system "git clone #{url(kit_name)}#{' ' + repo_name} && "\
-          "cd #{repo_name} && "\
-          "rm -rf .git && "\
-          "git init && "\
-          "git add . && "\
-          "git commit -am 'New proteus-#{kit_name} project' && "\
-          "cd -"
+        system "git clone #{url(kit_name)}#{' ' + repo_name} && \
+          cd #{repo_name} && \
+          rm -rf .git && \
+          git init && \
+          git add . && \
+          git commit -am 'New proteus-#{kit_name} project' && \
+          cd - "
       else
         puts "A thoughtbot repo doesn't exist with that name"
       end
