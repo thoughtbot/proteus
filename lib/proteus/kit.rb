@@ -17,8 +17,8 @@ module Proteus
       if system "git ls-remote #{url(kit_name)} #{repo_name} > /dev/null 2>&1"
         puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
         system %{
-          git clone #{url(kit_name)} #{repo_name} &&
-          cd #{repo_name} &&
+          git clone "#{url(kit_name)}" "#{repo_name}" &&
+          cd "#{repo_name}" &&
           rm -rf .git &&
           git init &&
           git add . &&
