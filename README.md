@@ -1,47 +1,57 @@
 # Proteus
 
-## About Proteus
-[Proteus](http://github.com/thoughtbot/proteus) is a collection of useful
-starter kits to help you prototype faster. They follow the
-[thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
-favorite front end tools.
+Proteus is a collection of useful starter kits to help you prototype
+faster. They follow the [thoughtbot styleguide](https://github.com/thoughtbot/guides)
+and includes our favorite front-end development tools.
 
 ## Kits
+
 * [Middleman](http://github.com/thoughtbot/proteus-middleman)
 * [Jekyll](http://github.com/thoughtbot/proteus-jekyll)
 * [Gulp](http://github.com/thoughtbot/proteus-gulp)
 
 ## Installation
 
-Just run this to install it:
+1. Install the Proteus gem using the [RubyGems](https://rubygems.org) package manager:
 
-```
-gem install proteus-kits
-```
+  ```bash
+  gem install proteus-kits
+  ```
 
-Then pick the project you want to start (i.e. Middleman)
-```
-proteus new middleman your-project-name
-```
+2. Then kick off a new project with the kit you want to use (i.e. Middleman):
 
-Shortcuts
--------
+  ```bash
+  proteus new middleman your-project-name
+  ```
 
-We have also included some handy shortcuts for your Proteus kit: `proteus setup`, `proteus server` and `proteus deploy`
+## Shortcuts
 
-Credits
--------
+We’ve also included some handy shortcuts with Proteus:
 
-![thoughtbot](http://thoughtbot.com/logo.png)
+- Install dependencies and clear the Git remote:
 
-This application is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
+  ```bash
+  proteus setup
+  ```
 
-Thank you to all [the contributors](https://github.com/thoughtbot/proteus-middleman/contributors)!
+- Start the kit-specific server (i.e. `bundle exec middleman server`):
 
-License
--------
+  ```bash
+  proteus server
+  ```
 
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+- Run the kit-specific deploy (i.e. `middleman deploy`):
 
-Carnival is Copyright © 2014 thoughtbot, inc. It is free software, and may be
-redistributed under the terms specified in the LICENSE file.
+  ```bash
+  proteus deploy
+  ```
+
+## Credits
+
+[![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
+
+Proteus is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Thank you to all of [the contributors](https://github.com/thoughtbot/proteus-middleman/contributors)!
+
+## License
+
+Copyright © 2014–2015 [thoughtbot, inc](http://thoughtbot.com). Proteus is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
