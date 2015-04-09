@@ -46,6 +46,21 @@ We’ve also included some handy shortcuts with Proteus:
   proteus deploy
   ```
 
+## Contributing
+
+If you'd like to contribute a feature or bugfix: Thanks! To make sure your
+fix/feature has a high chance of being included, please read the following
+guidelines:
+
+1. Fork the repository
+2. Make your changes
+3. Push your branch to your fork
+4. Post a [pull request](https://github.com/thoughtbot/proteus/compare).
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details on contributing and running test.
+
+Thank you to all [the contributors](https://github.com/thoughtbot/proteus-middleman/contributors)!
+
 ## Credits
 
 [![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
