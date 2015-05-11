@@ -5,8 +5,8 @@
   @include linear-gradient($blue, mix($blue, $aqua));
   box-shadow: 0 0 8px rgba(#000, 0.8);
   color: #eee;
-  height: 95vh;
-  min-height: 20em;
+  height: 50vh;
+  min-height: 25em;
 
   .container {
     text-align: center;
