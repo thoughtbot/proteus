@@ -50,7 +50,7 @@ module Proteus
 
     desc "version", "Show Proteus version"
     def version
-        say "Proteus #{Proteus::VERSION}"
+      say "Proteus #{Proteus::VERSION}"
     end
   end
 end
