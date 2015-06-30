@@ -14,7 +14,7 @@ module Proteus
     def new(kit_name, repo_name = nil)
       repo_name ||= kit_name
 
-      if system "git ls-remote #{url(kit_name)} #{repo_name} > /dev/null 2>&1"
+      if system "git ls-remote #{url(kit_name)} > /dev/null 2>&1"
         puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
         system %{
           git clone "#{url(kit_name)}" "#{repo_name}" &&
