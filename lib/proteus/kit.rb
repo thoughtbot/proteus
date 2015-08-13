@@ -7,7 +7,7 @@ module Proteus
 
     desc "url", "gets the git url"
     def url(kit)
-      "git@github.com:thoughtbot/proteus-#{kit}.git"
+      "https://github.com/thoughtbot/proteus-#{kit}.git"
     end
 
     desc "new", "runs the command to clone a particular kit"
