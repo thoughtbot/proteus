@@ -8,7 +8,7 @@ and includes our favorite front-end development tools.
 
 * [Middleman](http://github.com/thoughtbot/proteus-middleman)
 * [Jekyll](http://github.com/thoughtbot/proteus-jekyll)
-* [Gulp](http://github.com/thoughtbot/proteus-gulp)
+* Have a request for another kit? Open an issue to let us know.
 
 ## Installation
 
@@ -69,4 +69,4 @@ Proteus is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Th
 
 ## License
 
-Copyright © 2014–2015 [thoughtbot, inc](http://thoughtbot.com). Proteus is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
+Copyright © 2014–2016 [thoughtbot, inc](http://thoughtbot.com). Proteus is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).

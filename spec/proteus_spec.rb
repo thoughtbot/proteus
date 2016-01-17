@@ -1,31 +1,44 @@
 require "spec_helper"
 
 describe Proteus do
-  before(:all) do
+  before do
     remove_dummy_repo
     @proteus = Proteus::Kit.new
+    @repos = Proteus::REPOS
   end
 
-  it "completes the url" do
-    url = @proteus.url("test")
-    expect(url).to eq("git@github.com:thoughtbot/proteus-test.git")
+  it "has a list of repos" do
+    expect(@repos).not_to be_nil
   end
 
-  it "finds and download a kit" do
-    kit_name = 'middleman'
-    repo_name = 'spec/dummy'
-
-    quietly do
-      expect { @proteus.new(kit_name, repo_name) }.to output("Starting a new proteus-#{kit_name} project in #{repo_name}\n").to_stdout
-    end
+  it "gets repos in the list" do
+    expect(@repos.size).to be > 0
   end
 
-  it "returns a friendly message if the repo doesn't exist" do
-    expect { @proteus.new('invalid') }.to output("A thoughtbot repo doesn't exist with that name\n").to_stdout
+  it "gets the kit name" do
+    expect(@proteus.name("jekyll")).to eq("Jekyll Starter")
   end
 
-  private
-    def remove_dummy_repo
-      FileUtils.rm_rf(Dir["./spec/dummy"])
-    end
+  it "gets the Git url" do
+    url = "https://github.com/thoughtbot/proteus-middleman.git"
+    expect(@proteus.url("middleman")).to eq(url)
+  end
+
+  it "displays a list of repos" do
+    expect { @proteus.list }.to output().to_stdout
+  end
+
+  it "displays a friendly message if the kit isn't in the list" do
+    message = "Kit not found. Run `proteus list` to see available kits.\n"
+    expect { @proteus.new("invalid") }.to output(message).to_stdout
+  end
+
+  it "displays the current version" do
+    version = Proteus::VERSION
+    expect { @proteus.version }.to output("Proteus #{version}\n").to_stdout
+  end
+
+  def remove_dummy_repo
+    FileUtils.rm_rf(Dir["./spec/dummy"])
+  end
 end

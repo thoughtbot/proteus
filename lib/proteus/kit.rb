@@ -1,32 +1,56 @@
 require "proteus/version"
+require "proteus/repos"
 require "thor"
 
 module Proteus
   class Kit < Thor
     include Thor::Actions
 
-    desc "url", "gets the git url"
-    def url(kit)
-      "https://github.com/thoughtbot/proteus-#{kit}.git"
+    no_commands do
+      def url(id)
+        kit = Proteus::REPOS[id.to_sym]
+        kit[:url]
+      end
+
+      def name(id)
+        kit = Proteus::REPOS[id.to_sym]
+        kit[:name]
+      end
+    end
+
+    desc "list", "shows a list of available kits"
+    def list
+      repos = Proteus::REPOS
+      repos.each do |id, repo|
+        puts "#{id} - #{repo[:name]}"
+      end
     end
 
     desc "new", "runs the command to clone a particular kit"
-    def new(kit_name, repo_name = nil)
-      repo_name ||= kit_name
+    def new(id, dir = nil)
+      dir ||= id
+      kit = Proteus::REPOS[id.to_sym]
 
-      if system "git ls-remote #{url(kit_name)} > /dev/null 2>&1"
-        puts "Starting a new proteus-#{kit_name} project in #{repo_name}"
-        system %{
-          git clone "#{url(kit_name)}" "#{repo_name}" &&
-          cd "#{repo_name}" &&
-          rm -rf .git &&
-          git init &&
-          git add . &&
-          git commit -am 'New proteus-#{kit_name} project' &&
-          cd -
-        }
+      if kit
+        name = kit[:name]
+        url = kit[:url]
+
+        if system "git ls-remote #{url} #{dir} > /dev/null 2>&1"
+          puts "Starting a new #{name} project in #{dir} from #{url}"
+          system %{
+            git clone "#{url}" "#{dir}" &&
+            cd "#{dir}" &&
+            rm -rf .git &&
+            git init &&
+            git add . &&
+            git commit -m 'New #{name} project' &&
+            cd -
+          }
+        else
+          puts "Can't find a repo at #{url}."
+        end
       else
-        puts "A thoughtbot repo doesn't exist with that name"
+        puts "Kit not found. Run `proteus list` to see available kits."
       end
     end
 
@@ -50,7 +74,8 @@ module Proteus
 
     desc "version", "Show Proteus version"
     def version
-      say "Proteus #{Proteus::VERSION}"
+      version_number = Proteus::VERSION
+      puts "Proteus #{version_number}"
     end
   end
 end
