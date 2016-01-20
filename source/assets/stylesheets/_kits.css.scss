@@ -6,8 +6,8 @@
   @include clearfix;
 
   li {
-    @include omega(3n);
-    @include span-columns(4);
+    @include omega(even);
+    @include span-columns(6);
     color: $light-gray;
     font-size: em(13);
     margin-bottom: 2em;
