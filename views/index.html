@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width,initial-scale=1,maximum-scale=1' name='viewport'>
+    <title>Proteus</title>
+    <link href="../assets/stylesheets/application.css" rel="stylesheet" />
+    <script src="//use.typekit.net/pex8wnm.js"></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+    </script>
+  </head>
+  <body class='views views_index'>
+    <div class='notice'>
+      Note: This project is no longer being actively maintained.
+    </div>
+    <div class='hero'>
+      <div class='container'>
+        <img data-svg-fallback="/assets/images/logo.png" src="../assets/images/logo.svg" />
+        <h1>Proteus</h1>
+        <p>Static site starter kits from your friends at <a href="http://thoughtbot.com">thoughtbot</a></p>
+      </div>
+    </div>
+    <div class='container'>
+      <section class='section-kits' id='start'>
+        <div class='section-title'>
+          <h3>The kits (so far)</h3>
+        </div>
+        <ul class='kits'>
+          <li>
+            <a href="http://github.com/thoughtbot/proteus-middleman"><img data-svg-fallback="/assets/images/middleman.png" src="../assets/images/middleman.svg" />
+            <h3>Middleman</h3>
+            </a>
+            <p>Tiny static site generator written in Ruby</p>
+          </li>
+          <li>
+            <a href="http://github.com/thoughtbot/proteus-jekyll"><img data-svg-fallback="/assets/images/jekyll.png" src="../assets/images/jekyll.svg" />
+            <h3>Jekyll</h3>
+            </a>
+            <p>Ruby site generator with tons of plugins</p>
+          </li>
+        </ul>
+        <a class="button" href="https://github.com/thoughtbot/proteus">View the kits on Github</a>
+      </section>
+      <section>
+        <div class='section-title'>
+          <h3>What's included?</h3>
+        </div>
+        <p class='intro'>Proteus is a collection of useful starter kits to help you launch your static site or prototype faster. They follow the <a href="https://github.com/thoughtbot/guides/tree/master/style">thoughtbot styleguide</a> and include our favorite front end tools:</p>
+        <ul class='tools'>
+          <li class='tool-haml'>
+            <a href="http://haml.info"><div class='icon'>
+              <img data-svg-fallback="/assets/images/haml.png" src="../assets/images/haml.svg" />
+            </div>
+            <div class='info'>
+              <h3>HAML</h3>
+              <p>Simple template markup</p>
+            </div>
+            </a>
+          </li>
+          <li class='tool-coffeescript'>
+            <a href="http://coffeescript.org"><div class='icon'>
+              <img data-svg-fallback="/assets/images/coffeescript.png" src="../assets/images/coffeescript.svg" />
+            </div>
+            <div class='info'>
+              <h3>Coffeescript</h3>
+              <p>Beats writing javascript</p>
+            </div>
+            </a>
+          </li>
+          <li class='tool-sass'>
+            <a href="http://sass-lang.com"><div class='icon'>
+              <img data-svg-fallback="/assets/images/sass.png" src="../assets/images/sass.svg" />
+            </div>
+            <div class='info'>
+              <h3>Sass</h3>
+              <p>CSS with superpowers</p>
+            </div>
+            </a>
+          </li>
+          <li class='tool-bourbon'>
+            <a href="http://bourbon.io"><div class='icon'>
+              <img data-svg-fallback="/assets/images/bourbon.png" src="../assets/images/bourbon.svg" />
+            </div>
+            <div class='info'>
+              <h3>Bourbon</h3>
+              <p>Sass mixin library</p>
+            </div>
+            </a>
+          </li>
+          <li class='tool-neat'>
+            <a href="http://neat.bourbon.io"><div class='icon'>
+              <img data-svg-fallback="/assets/images/neat.png" src="../assets/images/neat.svg" />
+            </div>
+            <div class='info'>
+              <h3>Neat</h3>
+              <p>Semantic grid</p>
+            </div>
+            </a>
+          </li>
+          <li class='tool-bitters'>
+            <a href="http://bitters.bourbon.io"><div class='icon'>
+              <img data-svg-fallback="/assets/images/bitters.png" src="../assets/images/bitters.svg" />
+            </div>
+            <div class='info'>
+              <h3>Bitters</h3>
+              <p>Styles, variables and structure</p>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class='section-gem'>
+        <div class='section-title'>
+          <img data-svg-fallback="/assets/images/gem.png" src="../assets/images/gem.svg" />
+          <h3>A gem to make it even easier</h3>
+        </div>
+        <p>Just run this to install it:</p>
+        <pre><code>gem install proteus-kits</code></pre>
+        <p>Then pick the project you want to start (i.e. Middleman)</p>
+        <pre><code>proteus new middleman your-project-name</code></pre>
+        <p>We've also included some handy shortcuts for you to use in your kit:</p>
+        <ul>
+          <li>
+            <code>proteus setup</code>
+            : Installs dependencies
+          </li>
+          <li>
+            <code>proteus server</code>
+            : Runs the server
+          </li>
+          <li>
+            <code>proteus deploy</code>
+            : Deploys your site to Github Pages
+          </li>
+        </ul>
+      </section>
+      <section class='section-faq'>
+        <div class='section-title'>
+          <h3>Questions</h3>
+        </div>
+        <dl>
+          <dt>What's up with the name?</dt>
+          <dd>Proteus was an early Greek sea god and a shapeshifter. The English word "protean" means "able to do many things, change easily, versatile". We use static site generators to <em>prot</em>otype apps and sites quickly, so it seemed like a good fit.</dd>
+          <dt>I found a bug / Have an improvement / Want to help</dt>
+          <dd>
+            Great! The best way to make the kits better is to open an Issue on that kit on Github. Bonus points if you submit a Pull Request to fix a problem. Ask <a href="http://twitter.com/joshuaogle">@joshuaogle</a> if you have any questions on where to get started.
+          </dd>
+          <dt>My favorite generator isn't listed!</dt>
+          <dd>
+            We'll be adding more as we find ourselves using more of them. Can't wait? Put together a template that includes the tools listed above and
+            <a href="https://github.com/thoughtbot/proteus/pulls">open a pull request</a>
+            adding it to the list.
+          </dd>
+        </dl>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script><script src="../assets/javascripts/application.js"></script>
+    <footer class='footer'>
+      <div class='logo'></div>
+      &copy;
+      <a href="//thoughtbot.com">thoughtbot</a>
+      2017
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://sportcoat-hypodermic-staging.s3.amazonaws.com/load-sportcoat.js"></script>
+  </body>
+</html>

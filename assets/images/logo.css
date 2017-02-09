@@ -1,0 +1,854 @@
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(75px); }
+  5% {
+    -webkit-transform: rotate(18deg) translateX(80px); }
+  10% {
+    -webkit-transform: rotate(36deg) translateX(75px); }
+  15% {
+    -webkit-transform: rotate(54deg) translateX(70px); }
+  20% {
+    -webkit-transform: rotate(72deg) translateX(75px); }
+  25% {
+    -webkit-transform: rotate(90deg) translateX(80px); }
+  30% {
+    -webkit-transform: rotate(108deg) translateX(75px); }
+  35% {
+    -webkit-transform: rotate(126deg) translateX(70px); }
+  40% {
+    -webkit-transform: rotate(144deg) translateX(75px); }
+  45% {
+    -webkit-transform: rotate(162deg) translateX(80px); }
+  50% {
+    -webkit-transform: rotate(180deg) translateX(75px); }
+  55% {
+    -webkit-transform: rotate(198deg) translateX(70px); }
+  60% {
+    -webkit-transform: rotate(216deg) translateX(75px); }
+  65% {
+    -webkit-transform: rotate(234deg) translateX(80px); }
+  70% {
+    -webkit-transform: rotate(252deg) translateX(75px); }
+  75% {
+    -webkit-transform: rotate(270deg) translateX(70px); }
+  80% {
+    -webkit-transform: rotate(288deg) translateX(75px); }
+  85% {
+    -webkit-transform: rotate(306deg) translateX(80px); }
+  90% {
+    -webkit-transform: rotate(324deg) translateX(75px); }
+  95% {
+    -webkit-transform: rotate(342deg) translateX(70px); }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(75px); } }
+@keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(75px);
+    transform: rotate(0deg) translateX(75px); }
+  5% {
+    -webkit-transform: rotate(18deg) translateX(80px);
+    transform: rotate(18deg) translateX(80px); }
+  10% {
+    -webkit-transform: rotate(36deg) translateX(75px);
+    transform: rotate(36deg) translateX(75px); }
+  15% {
+    -webkit-transform: rotate(54deg) translateX(70px);
+    transform: rotate(54deg) translateX(70px); }
+  20% {
+    -webkit-transform: rotate(72deg) translateX(75px);
+    transform: rotate(72deg) translateX(75px); }
+  25% {
+    -webkit-transform: rotate(90deg) translateX(80px);
+    transform: rotate(90deg) translateX(80px); }
+  30% {
+    -webkit-transform: rotate(108deg) translateX(75px);
+    transform: rotate(108deg) translateX(75px); }
+  35% {
+    -webkit-transform: rotate(126deg) translateX(70px);
+    transform: rotate(126deg) translateX(70px); }
+  40% {
+    -webkit-transform: rotate(144deg) translateX(75px);
+    transform: rotate(144deg) translateX(75px); }
+  45% {
+    -webkit-transform: rotate(162deg) translateX(80px);
+    transform: rotate(162deg) translateX(80px); }
+  50% {
+    -webkit-transform: rotate(180deg) translateX(75px);
+    transform: rotate(180deg) translateX(75px); }
+  55% {
+    -webkit-transform: rotate(198deg) translateX(70px);
+    transform: rotate(198deg) translateX(70px); }
+  60% {
+    -webkit-transform: rotate(216deg) translateX(75px);
+    transform: rotate(216deg) translateX(75px); }
+  65% {
+    -webkit-transform: rotate(234deg) translateX(80px);
+    transform: rotate(234deg) translateX(80px); }
+  70% {
+    -webkit-transform: rotate(252deg) translateX(75px);
+    transform: rotate(252deg) translateX(75px); }
+  75% {
+    -webkit-transform: rotate(270deg) translateX(70px);
+    transform: rotate(270deg) translateX(70px); }
+  80% {
+    -webkit-transform: rotate(288deg) translateX(75px);
+    transform: rotate(288deg) translateX(75px); }
+  85% {
+    -webkit-transform: rotate(306deg) translateX(80px);
+    transform: rotate(306deg) translateX(80px); }
+  90% {
+    -webkit-transform: rotate(324deg) translateX(75px);
+    transform: rotate(324deg) translateX(75px); }
+  95% {
+    -webkit-transform: rotate(342deg) translateX(70px);
+    transform: rotate(342deg) translateX(70px); }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(75px);
+    transform: rotate(360deg) translateX(75px); } }
+/* line 29, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+#logo #nucleus {
+  fill: #4ABAB0;
+  position: relative; }
+/* line 35, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+#logo #particles circle {
+  -webkit-animation: orbit 60s linear infinite;
+  animation: orbit 60s linear infinite;
+  -webkit-transform-origin: 160px 160px;
+  transform-origin: 160px 160px;
+  fill: #4ABAB0; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(0) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(1) {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(2) {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(3) {
+    -webkit-animation-delay: -1.5s;
+    animation-delay: -1.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(4) {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(5) {
+    -webkit-animation-delay: -2.5s;
+    animation-delay: -2.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(6) {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(7) {
+    -webkit-animation-delay: -3.5s;
+    animation-delay: -3.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(8) {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(9) {
+    -webkit-animation-delay: -4.5s;
+    animation-delay: -4.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(10) {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(11) {
+    -webkit-animation-delay: -5.5s;
+    animation-delay: -5.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(12) {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(13) {
+    -webkit-animation-delay: -6.5s;
+    animation-delay: -6.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(14) {
+    -webkit-animation-delay: -7s;
+    animation-delay: -7s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(15) {
+    -webkit-animation-delay: -7.5s;
+    animation-delay: -7.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(16) {
+    -webkit-animation-delay: -8s;
+    animation-delay: -8s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(17) {
+    -webkit-animation-delay: -8.5s;
+    animation-delay: -8.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(18) {
+    -webkit-animation-delay: -9s;
+    animation-delay: -9s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(19) {
+    -webkit-animation-delay: -9.5s;
+    animation-delay: -9.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(20) {
+    -webkit-animation-delay: -10s;
+    animation-delay: -10s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(21) {
+    -webkit-animation-delay: -10.5s;
+    animation-delay: -10.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(22) {
+    -webkit-animation-delay: -11s;
+    animation-delay: -11s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(23) {
+    -webkit-animation-delay: -11.5s;
+    animation-delay: -11.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(24) {
+    -webkit-animation-delay: -12s;
+    animation-delay: -12s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(25) {
+    -webkit-animation-delay: -12.5s;
+    animation-delay: -12.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(26) {
+    -webkit-animation-delay: -13s;
+    animation-delay: -13s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(27) {
+    -webkit-animation-delay: -13.5s;
+    animation-delay: -13.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(28) {
+    -webkit-animation-delay: -14s;
+    animation-delay: -14s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(29) {
+    -webkit-animation-delay: -14.5s;
+    animation-delay: -14.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(30) {
+    -webkit-animation-delay: -15s;
+    animation-delay: -15s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(31) {
+    -webkit-animation-delay: -15.5s;
+    animation-delay: -15.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(32) {
+    -webkit-animation-delay: -16s;
+    animation-delay: -16s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(33) {
+    -webkit-animation-delay: -16.5s;
+    animation-delay: -16.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(34) {
+    -webkit-animation-delay: -17s;
+    animation-delay: -17s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(35) {
+    -webkit-animation-delay: -17.5s;
+    animation-delay: -17.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(36) {
+    -webkit-animation-delay: -18s;
+    animation-delay: -18s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(37) {
+    -webkit-animation-delay: -18.5s;
+    animation-delay: -18.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(38) {
+    -webkit-animation-delay: -19s;
+    animation-delay: -19s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(39) {
+    -webkit-animation-delay: -19.5s;
+    animation-delay: -19.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(40) {
+    -webkit-animation-delay: -20s;
+    animation-delay: -20s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(41) {
+    -webkit-animation-delay: -20.5s;
+    animation-delay: -20.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(42) {
+    -webkit-animation-delay: -21s;
+    animation-delay: -21s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(43) {
+    -webkit-animation-delay: -21.5s;
+    animation-delay: -21.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(44) {
+    -webkit-animation-delay: -22s;
+    animation-delay: -22s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(45) {
+    -webkit-animation-delay: -22.5s;
+    animation-delay: -22.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(46) {
+    -webkit-animation-delay: -23s;
+    animation-delay: -23s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(47) {
+    -webkit-animation-delay: -23.5s;
+    animation-delay: -23.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(48) {
+    -webkit-animation-delay: -24s;
+    animation-delay: -24s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(49) {
+    -webkit-animation-delay: -24.5s;
+    animation-delay: -24.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(50) {
+    -webkit-animation-delay: -25s;
+    animation-delay: -25s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(51) {
+    -webkit-animation-delay: -25.5s;
+    animation-delay: -25.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(52) {
+    -webkit-animation-delay: -26s;
+    animation-delay: -26s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(53) {
+    -webkit-animation-delay: -26.5s;
+    animation-delay: -26.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(54) {
+    -webkit-animation-delay: -27s;
+    animation-delay: -27s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(55) {
+    -webkit-animation-delay: -27.5s;
+    animation-delay: -27.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(56) {
+    -webkit-animation-delay: -28s;
+    animation-delay: -28s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(57) {
+    -webkit-animation-delay: -28.5s;
+    animation-delay: -28.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(58) {
+    -webkit-animation-delay: -29s;
+    animation-delay: -29s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(59) {
+    -webkit-animation-delay: -29.5s;
+    animation-delay: -29.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(60) {
+    -webkit-animation-delay: -30s;
+    animation-delay: -30s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(61) {
+    -webkit-animation-delay: -30.5s;
+    animation-delay: -30.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(62) {
+    -webkit-animation-delay: -31s;
+    animation-delay: -31s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(63) {
+    -webkit-animation-delay: -31.5s;
+    animation-delay: -31.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(64) {
+    -webkit-animation-delay: -32s;
+    animation-delay: -32s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(65) {
+    -webkit-animation-delay: -32.5s;
+    animation-delay: -32.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(66) {
+    -webkit-animation-delay: -33s;
+    animation-delay: -33s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(67) {
+    -webkit-animation-delay: -33.5s;
+    animation-delay: -33.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(68) {
+    -webkit-animation-delay: -34s;
+    animation-delay: -34s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(69) {
+    -webkit-animation-delay: -34.5s;
+    animation-delay: -34.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(70) {
+    -webkit-animation-delay: -35s;
+    animation-delay: -35s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(71) {
+    -webkit-animation-delay: -35.5s;
+    animation-delay: -35.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(72) {
+    -webkit-animation-delay: -36s;
+    animation-delay: -36s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(73) {
+    -webkit-animation-delay: -36.5s;
+    animation-delay: -36.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(74) {
+    -webkit-animation-delay: -37s;
+    animation-delay: -37s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(75) {
+    -webkit-animation-delay: -37.5s;
+    animation-delay: -37.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(76) {
+    -webkit-animation-delay: -38s;
+    animation-delay: -38s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(77) {
+    -webkit-animation-delay: -38.5s;
+    animation-delay: -38.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(78) {
+    -webkit-animation-delay: -39s;
+    animation-delay: -39s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(79) {
+    -webkit-animation-delay: -39.5s;
+    animation-delay: -39.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(80) {
+    -webkit-animation-delay: -40s;
+    animation-delay: -40s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(81) {
+    -webkit-animation-delay: -40.5s;
+    animation-delay: -40.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(82) {
+    -webkit-animation-delay: -41s;
+    animation-delay: -41s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(83) {
+    -webkit-animation-delay: -41.5s;
+    animation-delay: -41.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(84) {
+    -webkit-animation-delay: -42s;
+    animation-delay: -42s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(85) {
+    -webkit-animation-delay: -42.5s;
+    animation-delay: -42.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(86) {
+    -webkit-animation-delay: -43s;
+    animation-delay: -43s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(87) {
+    -webkit-animation-delay: -43.5s;
+    animation-delay: -43.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(88) {
+    -webkit-animation-delay: -44s;
+    animation-delay: -44s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(89) {
+    -webkit-animation-delay: -44.5s;
+    animation-delay: -44.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(90) {
+    -webkit-animation-delay: -45s;
+    animation-delay: -45s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(91) {
+    -webkit-animation-delay: -45.5s;
+    animation-delay: -45.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(92) {
+    -webkit-animation-delay: -46s;
+    animation-delay: -46s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(93) {
+    -webkit-animation-delay: -46.5s;
+    animation-delay: -46.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(94) {
+    -webkit-animation-delay: -47s;
+    animation-delay: -47s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(95) {
+    -webkit-animation-delay: -47.5s;
+    animation-delay: -47.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(96) {
+    -webkit-animation-delay: -48s;
+    animation-delay: -48s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(97) {
+    -webkit-animation-delay: -48.5s;
+    animation-delay: -48.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(98) {
+    -webkit-animation-delay: -49s;
+    animation-delay: -49s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(99) {
+    -webkit-animation-delay: -49.5s;
+    animation-delay: -49.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(100) {
+    -webkit-animation-delay: -50s;
+    animation-delay: -50s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(101) {
+    -webkit-animation-delay: -50.5s;
+    animation-delay: -50.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(102) {
+    -webkit-animation-delay: -51s;
+    animation-delay: -51s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(103) {
+    -webkit-animation-delay: -51.5s;
+    animation-delay: -51.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(104) {
+    -webkit-animation-delay: -52s;
+    animation-delay: -52s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(105) {
+    -webkit-animation-delay: -52.5s;
+    animation-delay: -52.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(106) {
+    -webkit-animation-delay: -53s;
+    animation-delay: -53s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(107) {
+    -webkit-animation-delay: -53.5s;
+    animation-delay: -53.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(108) {
+    -webkit-animation-delay: -54s;
+    animation-delay: -54s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(109) {
+    -webkit-animation-delay: -54.5s;
+    animation-delay: -54.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(110) {
+    -webkit-animation-delay: -55s;
+    animation-delay: -55s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(111) {
+    -webkit-animation-delay: -55.5s;
+    animation-delay: -55.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(112) {
+    -webkit-animation-delay: -56s;
+    animation-delay: -56s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(113) {
+    -webkit-animation-delay: -56.5s;
+    animation-delay: -56.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(114) {
+    -webkit-animation-delay: -57s;
+    animation-delay: -57s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(115) {
+    -webkit-animation-delay: -57.5s;
+    animation-delay: -57.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(116) {
+    -webkit-animation-delay: -58s;
+    animation-delay: -58s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(117) {
+    -webkit-animation-delay: -58.5s;
+    animation-delay: -58.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(118) {
+    -webkit-animation-delay: -59s;
+    animation-delay: -59s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(119) {
+    -webkit-animation-delay: -59.5s;
+    animation-delay: -59.5s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 44, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(120) {
+    -webkit-animation-delay: -60s;
+    animation-delay: -60s;
+    -webkit-animation-duration: 54s;
+    animation-duration: 54s; }
+  /* line 50, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(even) {
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s; }
+  /* line 55, /Users/tysongach/Repos/thoughtbot/proteus/source/assets/images/logo.css.scss */
+  #logo #particles circle:nth-child(3) {
+    -webkit-animation-duration: 96s;
+    animation-duration: 96s; }
