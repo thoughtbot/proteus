@@ -1,5 +1,7 @@
 # Proteus
 
+**Note:** Proteus is no longer being actively maintained.
+
 Proteus is a collection of useful starter kits to help you prototype
 faster. They follow the [thoughtbot styleguide](https://github.com/thoughtbot/guides)
 and includes our favorite front-end development tools.
